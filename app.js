@@ -82,7 +82,6 @@ for (let i = 1; i <= 10; i++) {
 }
 /*
 5
-
 4
 2
 2
@@ -93,3 +92,56 @@ for (let i = 1; i <= 10; i++) {
 5
 6
  */
+const m = 4;
+let sum = 0;
+
+
+
+for(let i = 1; i <= m; i++) {
+  sum +=i;
+}
+
+console.log(sum);
+
+
+
+function splitString(str) {
+  let result = [];
+
+  let splitStr = str.length % 2 === 0 ? str : str + '_';
+
+  for (let i = 0; i < splitStr.length; i += 2) {
+
+    result.push(splitStr[i] + splitStr[i + 1]);
+
+  }
+
+  return result;
+
+}
+console.log(splitString('abc'));
+
+for (let i = 1; i <= 10; i++) {
+  if (i % 2 !== 0) {
+    continue;
+
+  }
+  console.log(i);
+}
+
+debugger
+let n =1234;
+let i = 0;
+for(;Number.isInteger(n); i++) {
+  n /=2;
+}
+console.log(i-1);
+
+
+const title ='Mate academy';
+console.log(title);
+console.log(title [0]);
+console.log(title.length);
+console.log(title.replace('_',','));
+console.log(title.split(','));
+console.log(title.split('').reverse().join(''));
